@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <title>Rendelés</title>
+    <link rel="stylesheet" href="css/style-rendelés.css">
+</head>
+
+<body>
+    <a href="étlap.html">Étlap</a>
+    <a href="akciók.html">Akciók</a>
+    <a href="elérhetőség.html">Elérhetőség</a>
+    <a href="rendelés.html">Rendelés</a>
+    <br><br>
+
+    <h2>Étel rendelés</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <form>
+                    <fieldset>
+                        <legend>Személyes adatok</legend>
+                        <div class="form-group">
+                            <label for="name">Név: *</label>
+                            <input class="form-control" id="name" name="name" type="text" required>
+                        </div>
+                        <div class="form-group"> 
+                            <label for="email">E-mail cím: *</label>
+                            <input class="form-control" id="email" name="email" type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Cím: *</label>
+                            <input class="form-control" id="address" name="address" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Megjegyzés:</label>
+                            <textarea class="form-control" id="comment" name="comment" rows="3" cols="30"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <form>
+                    <fieldset>
+                        <legend>Termék adatai</legend>
+                        <div>
+                            <h5>Alap hamburger ára: 1 200 Ft</h5>
+                        </div>
+                        
+                        <div class="form-group">
+                            <h5>Extra feltét: <span class="extra-flt">300</span>Ft</h5>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input class="form-control form-control-sm" id="nothing" name="extra" type="radio">
+                            <label for="nothing">Nem kérek</label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control form-control-sm" id="cheese" name="extra" type="radio">
+                            <label for="cheese">Sajt</label>
+                        </div>
+                        <div class="form-group">
+                            <input  class="form-control form-control-sm" id="bacon" name="extra" type="radio">
+                            <label for="bacon">Bacon</label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control form-control-sm" id="double-meat" name="extra" type="radio">
+                            <label for="double-meat">Dupla hús</label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control form-control-sm" id="double-double" name="extra" type="radio">
+                            <label for="double-double">Sajt és Bacon</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="sauce"><h5>Szósz:</h5></label>
+                            <select class="form-control" id="sauce" name="sauce">
+                                <option>Hagyományos</option>
+                                <option>Csípős</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity"><h5>Mennyiség:</h5></label>
+                            <input class="form-control" id="quantity" name="quantity" type="number" min="1" max="10">
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        Fizetendő: <span class="show-amount">0</span>Ft
+                    </div>
+                    <div>
+                        <input onclick="calcAmount()" type="button" class="btn btn-success" value="Rendelés leadása"></input>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/étterem.js"></script>
+
+</body>
