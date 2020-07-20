@@ -53,6 +53,43 @@
         <td><img id="hatodik" src="img/muffin.jpg" alt="Desszert"></td>
         </tr>
     </table>
+    <h2>Milyen az időjárás?</h2>
+    <table>
+        <tr>
+            <td colspan="3" id="ajánlat">Minden nap más ajánlatunk van Önnek, csak az időjárást kell figyelnie.</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p id="nap">Melyik napra kíváncsi?</p>
+            </td>
+            <td>       
+                <select id="napok">
+                    <option value="0">Hétfő</option>
+                    <option value="1">Kedd</option>
+                    <option value="2">Szerda</option>
+                    <option value="3">Csütörtök</option>
+                    <option value="4">Péntek</option>
+                    <option value="5">Szombat</option>
+                    <option value="6">Vasárnap</option>
+                </select>
+            </td>
+            <td>
+               <button onclick="weatherW()"><span id="gomb">Mehet</span></button>
+            </td>
+            <td>
+                <p class="fok">Hőmérséklet: <span id="temp">0</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td  id="konkrét">Íme az időjárásnak megfelelő ajánlataink:</td>
+            <td colspan="2"><span id="ajánlatok"></span></td>
+        </tr>
+    </table>   
+    
+    <script src="js/étterem.js"></script>
+
 </body>
 
 </html>

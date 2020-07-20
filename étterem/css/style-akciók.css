@@ -63,3 +63,41 @@ img {
     margin-left: 165px;
     margin-right:80px;
 }
+
+select {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+button {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    margin-left: 50px;
+    margin-right: 20px;
+    background-color: rgb(231, 71, 71);
+}
+p.fok {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+#ajánlat {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 500px;
+    padding-left: 20px;
+    margin-right: 50px;
+}
+#konkrét {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 350px;
+    padding-left: 20px;
+    margin-right: 50px;
+}
+#ajánlatok {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+}
