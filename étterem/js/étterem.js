@@ -33,8 +33,8 @@ function weatherW() {
     let len = felsőértékek.length;
     for (i=0; i<len; i++) {
         if (temperatures[days] <= felsőértékek[i]) {
-            ajánlat.innerHTML += "<br> <span#ajánlatok>" + kínálat[i] + "</span>";
-            break;
+            ajánlat.innerHTML = "<span#ajánlatok>" + kínálat[i] + "</span>";
+        break;
         }
     }
 }
