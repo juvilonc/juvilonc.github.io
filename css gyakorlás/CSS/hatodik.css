@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    background: rgb(245, 245, 185);
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+header {
+    background: url('/IMG/IMG_9587 (2) szerk.jpg') no-repeat;
+    height: 403px;
+    position: relative;
+}
+.wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+}
+nav {
+    background: rgb(190, 12, 12);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+nav a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav>ul>li {
+    float: left;
+}
+nav .has-submenu {
+    position: relative;
+}
+nav .submenu {
+    position: absolute;
+    width: 220px;
+    display: none;
+}
+nav .submenu a {
+    background: rgb(190, 12, 12);
+    padding: 10px 20px; 
+}
+nav .submenu a:hover {
+    background: rgba(0, 0, 0);
+}
+nav .has-submenu:hover .submenu {
+    display: block;
+}
+nav .has-submenu::after {
+    content: '⯆';
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+nav .has-submenu>a {
+    padding-right: 35px;
+}
+main {
+    background: white;
+    padding: 40px;
+}
+main h1 {
+    margin-top: 0;
+}
