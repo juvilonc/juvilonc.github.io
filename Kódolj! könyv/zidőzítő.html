@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Időzítő</title>
+    <script>
+        let  számoló = 0;
+        function frissítSzámoló() {
+            számoló = számoló + 1;
+            document.querySelector("#szám").innerHTML = számoló;
+            setTimeout(frissítSzámoló, 1000);
+        }
+    </script>
+</head>
+<body>
+    <div id="szám"></div>
+
+    <script>
+        frissítSzámoló();
+    </script>
+</body>
+</html>

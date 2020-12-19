@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kezdőlap</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .wrapper {
+        margin: 20px;
+    }
+    header h1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 400;
+        color:white;
+        background-color: lightcoral;
+        padding: 25px;
+    }
+    nav ul {
+        padding: 10px 40px;
+    }
+    a {
+        font-size: 20px;
+        color: black;
+        padding: 5px;
+        display: inline-block;
+    }
+    a:hover {
+        background-color: rgba(0,0,0,0.1);
+    }
+    div.content {
+        padding: 10px;
+        background-color: rgb(222, 238, 243);
+    }
+    div.content main {
+        padding: 5px;
+    }
+    h2, p {
+        text-align: center;
+    }
+    h2 {
+        font-weight: 500;
+    }
+    .column {
+        float: left;
+        width: 33,33%;
+        padding: 15px;
+    }
+    img {
+        width: 450px;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    footer p {
+        text-align: center;
+        font-style: italic;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <header>
+            <h1>Gyémántok</h1>
+            <nav>
+                <ul>
+                    <li><a href="ajelszó.html">Jelszó</a></li>
+                    <li><a href="tennivalók.html">Tennivalók</a></li>
+                    <li><a href="zbiztonságijáték.html">Biztonságijáték</a></li>
+                </ul>
+            </nav>
+            </header>
+        </div>
+        <div class="content">
+            <main>
+                <h2>Üdvözöljük látogatóinkat!</h2>
+                <p>Ezen a weboldalon bepillanthatnak a gyémántok titokzatos világába. <br>
+                Az első link egy jelszót kér. <br>
+                Innen egy olyan oldalra jut, ahol információkat kaphat egy híres gyémántról.</p>
+                <p>A második link egy hasznos oldal: tennivalóit gyűjtheti, rendszerezheti.</p>
+                <p>A harmadik oldalon pedig egy játék segítségével felmérheti mennyire gyorsan reagál? <br>
+                Mennyire éber?</p>
+                <p>Jó szórakozást!</p>
+            <div class="row">
+                <div class="column">
+                    <img id="első" src="/IMG/szintelen-gyemantok.jpg" alt="szintelen gyémánt">
+                </div>
+                <div class="column">
+                    <img id="második" src="/IMG/cullinan.jpg" alt="cullinan">
+                </div>
+                <div class="column">
+                    <img id="harmadik" src="/IMG/gyemantok_szine.jpg" alt="színes gyémántok">
+                </div>
+            </div>
+            </main>
+        </div>
+        <div class="footer">
+            <footer>
+                <p>Copyright...</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
