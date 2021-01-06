@@ -17,7 +17,7 @@ body {
     justify-content: center;
 }
 .content {
-    background-image: url('Meglepetés/IMG/blister_20bubblesúj.jpg');
+    background: url('/Meglepetés/IMG/blister_20bubblesúj.jpg');
     width: 600px;
     height: 500px;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
@@ -49,7 +49,7 @@ body {
     left: -500px;
     width: 500px;
     height: 375px;
-    background-image: url('/IMG/IMG_0361szerk.jpg');
+    background-image: url('/Meglepetés/IMG/IMG_0361szerk.jpg');
     animation-name: kép1;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -66,7 +66,7 @@ body {
     left: -500px;
     width: 500px;
     height: 375px;
-    background-image: url('/IMG/IMG_0381szerk.jpg');
+    background-image: url('/Meglepetés/IMG/IMG_0377szerk.jpg');
     animation-name: kép2;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -83,7 +83,7 @@ body {
     left: -500px;
     width: 500px;
     height: 375px;
-    background-image: url('/IMG/IMG_0377szerk.jpg');
+    background-image: url('/Meglepetés/IMG/IMG_0381szerk.jpg');
     animation-name: kép3;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -100,7 +100,7 @@ body {
     left: -500px;
     width: 500px;
     height: 375px;
-    background-image: url('/IMG/IMG_0393szerk.jpg');
+    background-image: url('/Meglepetés/IMG/IMG_0393szerk.jpg');
     animation-name: kép4;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -117,7 +117,7 @@ body {
     left: -500px;
     width: 500px;
     height: 375px;
-    background-image: url('/IMG/IMG_0399szerk.jpg');
+    background-image: url('/Meglepetés/IMG/IMG_0399szerk.jpg');
     animation-name: kép5;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -134,7 +134,7 @@ body {
     left: -500px;
     width: 500px;
     height: 375px;
-    background-image: url('/IMG/IMG_0403szerk.jpg');
+    background-image: url('/Meglepetés/IMG/IMG_0403szerk.jpg');
     animation-name: kép6;
     animation-duration: 5s;
     animation-fill-mode: forwards;
