@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lotto.css">
+    <title>Lottó Játék</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Lottó játék</h1>
+        <div id="beviteliDiv">
+            <label for="szamok">Kérem, írjon be 5 számot 1 és 90 közt!</label>
+            <input type="text" name="szamok" id="szamok">
+            <button id="bevitel">Bevitel</button>
+        </div>
+        <p id="kiir"></p>
+
+        <p>A gombra kattintva sorsolunk 5 számot.</p>
+        <button id="sorsol">Sorsolás</button>
+        <p>Sorsolt számok:</p>
+        <p id="nyero"></p>
+
+        <p id="eredmeny"><span>Eredmény:</span><br></p>
+    </div>
+    
+    <script src="lotto.js"></script>
+</body>
+</html>

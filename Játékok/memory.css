@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+#container {
+    width: 800px;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: papayawhip;
+}
+h1, p, #adatok, #beviteliDiv{
+    text-align: center;
+}
+h1 {
+    color:teal;
+    letter-spacing: 3px;
+}
+ul {
+    width: 500px;
+    margin: 15px auto;
+}
+button {
+    display: block;
+    margin: 15px auto;
+    padding: 5px;
+    font-size: 20px;
+    background-color:lightcoral;
+}
+button:hover {
+    background-color:rgb(247, 68, 68);
+}

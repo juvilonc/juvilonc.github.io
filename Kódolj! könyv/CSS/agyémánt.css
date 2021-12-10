@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    margin: 20px;
+}
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color:white;
+    background-color: lightcoral;
+    padding: 25px;
+}
+h2 {
+    font-weight: 500;
+}
+h2.alcím {
+    text-align: center;
+}
+header p {
+    text-align: center;
+}
+div.content {
+    padding: 20px;
+    background-color: rgb(222, 238, 243);
+}
+div.content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+div.content main, div.content aside {
+    float: left;
+    width: 50%;
+}
+div.content main {
+    padding: 10px 20px;
+}
+div.content aside {
+    padding: 30px 0 80px 20px;
+}
+.szöveg1, .szöveg2 {
+    text-align: center;
+}
+div.image1 img, div.image2 img {
+    padding: 0 45px;
+}
+footer p {
+    text-align: center;
+    font-style: italic;
+}
+nav ul {
+    padding: 10px 40px;
+}
+a {
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+    display: inline-block;
+}
+a:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+label {
+    font-size: 18px;
+}
+input#belépés {
+    padding: 10px;
+}
+input#tennivaló, input#hozzáadás {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+input[type="button"] {
+    background-color: lightcoral;
+}
+input[type="button"]:hover {
+    background-color: rgba(240,128,128,0.5);
+}
+div.link {
+    padding: 25px;
+}
+div#lista > div {
+    padding-left: 20px;
+}

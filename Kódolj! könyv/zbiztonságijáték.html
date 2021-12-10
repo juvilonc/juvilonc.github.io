@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biztonsági játék</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .wrapper {
+            margin: 15px;
+        }
+        header h1 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 400;
+            color:white;
+            background-color: lightcoral;
+            padding: 25px;
+        }
+        h2 {
+            font-weight: 500;
+        }
+        h2.alcím {
+            text-align: center;
+        }
+        header p {
+            text-align: center;
+        }
+        div.content {
+            width: 50%;
+            margin: 30px auto;
+            padding: 20px 50px;
+            background-color: rgba(219, 189, 91, 0.89);
+        }
+        #indít {
+            margin: 15px;
+            padding: 20px;
+            font-size: 20px;
+        }
+        #indít:hover {
+            background-color: rgb(212, 212, 212);
+        }
+        #tábla {
+            border: 1px solid black;
+            padding: 15px;
+            background: url("IMG/GameBackground.jpg");
+            background-size: cover;
+            height: 350px;
+            width: 650px;
+        }
+        .szereplő {
+            background: url("IMG/Guest.jpg");
+            background-size: cover;
+            height: 120px;
+            width: 120px;
+            margin: 10px;
+            padding: 10px;
+            float: left;
+            display: none;
+        }
+        .tolvaj {
+            background: url("IMG/Thief.jpg");
+            background-size: cover;
+        }
+        .rejtett {
+            display: none;
+        }
+        .látható {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <header>
+            <h1>Gyémántok</h1>
+            <h2 class="alcím">Játék</h2>
+            <p>Ebben a játékban próbára teheti reakció idejét. <br>
+            Az indítás gomb után egy kiállítás szereplői jelennek meg a táblán: <br>
+            vendégek és egy tolvaj.</p>
+            <p>Az Ön feladata: elkapni a bűnözőt. Vagyis kattintania kell a tolvaj képére. <br>
+            Egy pont jár, ha sikeresen kattintott, viszont két pont levonás, ha elvétette. <br>
+            A játék mintegy fél percig tart. Ekkor megjelenik az eredménye.</p>
+            <p>Ha újra végigjátszaná, frissítse az oldalt.</p>
+            <p>Jó szórakozást!</p>
+            </header>
+        </div>
+        <div class="content">
+        <input id="indít" type="button" value="Játék indítása" onclick="játékIndítás()">
+        <div id="tábla">
+            <div class="szereplő"></div>
+            <div class="szereplő"></div>
+            <div class="szereplő"></div>
+            <div class="szereplő"></div>
+            <div class="szereplő"></div>
+            <div class="szereplő"></div>
+        </div>
+        </div>
+    </div>
+
+    <script src="JS/biztonságijáték.js"></script>
+</body>
+</html>

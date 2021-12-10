@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennivalók</title>
+    <link rel="stylesheet" href="CSS/agyémánt.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <header>
+            <h1>Gyémántok</h1>
+            <h2 class="alcím">Tennivalók a kiállítás előtt</h2>
+            <p>A játék kedvéért képzelje el, hogy egy gyémántokról szóló kiállítást szervez. <br>
+            Azt se tudja hol áll a feje... <br>
+            Javasoljuk: kezdje el összegyűjteni, mi mindent kell intéznie. <br>
+            Így rendszerezve könnyen megbirkózik majd a feladattal.</p>
+            </header>
+        </div>
+        <div class="content">
+            <p>Az alábbi dobozba beírva gyűjtheti az elintézendő dolgokat. <br>
+            Ha törölni szeretne valamit a listáról, csak kattintson rá!</p>
+            <input type="text" id="tennivaló" placeholder="Tennivalók beírása">
+            <input type="button" id="hozzáadás" value="Hozzáadás a listához" onclick="tennivalóBeírás()">
+            <div id="lista"></div>
+        </div>
+    </div>
+
+    <script src="JS/tennivalók.js"></script>
+</body>
+</html>

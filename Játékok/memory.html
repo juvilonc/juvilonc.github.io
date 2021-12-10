@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="memory.css">
+    <title>Memória Játék</title>
+</head>
+<body onload="kezd();">
+    <div id="container">
+        <h1>Memória Játék</h1>
+        <p>Kérem, adja meg, hány szóval szeretne játszani, és milyen hosszú szavak legyenek a játékban?</p>
+        <div id="adatok">
+            <label for="szoszam">Hány szó legyen?</label>
+            <input type="text" name="szoszam" id="szoszam" size="10">
+            <label for="hossz">Milyen hosszú szavak legyenek?</label>
+            <input type="text" name="hossz" id="hossz" size="10">
+        </div>
+        <p>A gombra kattintva megnézheti a szavakat. Próbálja megjegyezni őket.</p>
+        <button id="mutat">Mutat</button>
+        <ul id="listaz">
+
+        </ul>
+        <p>Most pedig a gombra kattintva indul a játék!</p>
+        <button id="jatek">Játék</button>
+        <br>
+        <div id="beviteliDiv">
+            <label for="beir">Kérem, írja be egyesével a megjegyzett szavakat!</label>
+            <input type="text" name="beir" id="beir" size="10">
+            <button id="bevitel">Bevitel</button>
+        </div>
+        <br>
+        <p id="kijelez1"></p>
+        <br>
+        <p id="kijelez2"></p>
+    </div>
+    <script src="memory.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(#fff, #a7a7a7);
+}
+.wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    background: url('/Meglepetés/IMG/blister_20bubblesúj.jpg');
+    width: 600px;
+    height: 500px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+.title {
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    color:purple;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.2);
+    animation-name: title;
+    animation-duration: 36s;
+    animation-fill-mode: forwards;
+}
+@keyframes title {
+    0% {top: -80px;}
+    5%, 95% {top: 0;}
+    100% {top: -80px;}
+}
+.kép1 {
+    position: absolute;
+    bottom: 25px;
+    left: -500px;
+    width: 500px;
+    height: 375px;
+    background-image: url('/Meglepetés/IMG/IMG_0361szerk.jpg');
+    animation-name: kép1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+@keyframes kép1 {
+    0% {left: -500px;}
+    20%, 50% {left: 50px;}
+    100% {left: 600px;}
+}
+.kép2 {
+    position: absolute;
+    bottom: 25px;
+    left: -500px;
+    width: 500px;
+    height: 375px;
+    background-image: url('/Meglepetés/IMG/IMG_0377szerk.jpg');
+    animation-name: kép2;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+}
+@keyframes kép2 {
+    0% {left: -500px;}
+    20%, 50% {left: 50px;}
+    100% {left: 600px;}
+}
+.kép3 {
+    position: absolute;
+    bottom: 25px;
+    left: -500px;
+    width: 500px;
+    height: 375px;
+    background-image: url('/Meglepetés/IMG/IMG_0381szerk.jpg');
+    animation-name: kép3;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 13s;
+}
+@keyframes kép3 {
+    0% {left: -500px;}
+    20%, 50% {left: 50px;}
+    100% {left: 600px;}
+}
+.kép4 {
+    position: absolute;
+    bottom: 25px;
+    left: -500px;
+    width: 500px;
+    height: 375px;
+    background-image: url('/Meglepetés/IMG/IMG_0393szerk.jpg');
+    animation-name: kép4;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 18s;
+}
+@keyframes kép4 {
+    0% {left: -500px;}
+    20%, 50% {left: 50px;}
+    100% {left: 600px;}
+}
+.kép5 {
+    position: absolute;
+    bottom: 25px;
+    left: -500px;
+    width: 500px;
+    height: 375px;
+    background-image: url('/Meglepetés/IMG/IMG_0399szerk.jpg');
+    animation-name: kép5;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 23s;
+}
+@keyframes kép5 {
+    0% {left: -500px;}
+    20%, 50% {left: 50px;}
+    100% {left: 600px;}
+}
+.kép6 {
+    position: absolute;
+    bottom: 25px;
+    left: -500px;
+    width: 500px;
+    height: 375px;
+    background-image: url('/Meglepetés/IMG/IMG_0403szerk.jpg');
+    animation-name: kép6;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 28s;
+}
+@keyframes kép6 {
+    0% {left: -500px;}
+    20%, 50% {left: 50px;}
+    100% {left: 600px;}
+}
+.szöveg {
+    position: absolute;
+    top: -90px;
+    width: 100%;
+    height: 90px;
+    color:rgb(248, 36, 21);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(241, 210, 210, 0.3);
+    /*animation-name: szöveg;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 36s;*/
+    animation: szöveg 3s 36s forwards, pulse 2s 38s infinite;
+}
+@keyframes szöveg {
+    0% {top: -90px;}
+    50%, 100% {top: 155px;}
+}
+@keyframes pulse {
+    0% {color:rgb(248, 36, 21);background: rgba(241, 210, 210, 0.3);}
+    50% {color: gold;background: rgba(0, 0, 0, 0.5);}
+}
